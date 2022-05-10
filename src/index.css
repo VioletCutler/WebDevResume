@@ -1,0 +1,287 @@
+:root {
+  --borderWidth: 0.2vw;
+  --borderRadius: 1vw;
+
+  --selectedThemeTitleColor: var(--ThemeOneTitleColor);
+  --selectedThemeTextColor: var(--ThemeOneTextColor);
+  --selectedThemeBackgroundColor: var(--ThemeOneBackgroundColor);
+  --selectedThemeElementColorHighlight: var(--ThemeOneElementColorHighlight);
+  --selectedThemeBoxBackground: var(--ThemeOneBoxBackground);
+  --selectedThemePostBackground: var(--ThemeOnePostBackground);
+  --selectedThemeNavTextColor: var(--ThemeOneNavTextColor);
+  --selectedThemeBorderColor: var(--ThemeOneBorderColor);
+
+  /* Theme One */
+  --ThemeOneTitleColor: #000000;
+  --ThemeOneTextColor: #000000;
+  --ThemeOneBackgroundColor: #4b9fa1;
+  --ThemeOneElementColorHighlight: #e3ba5a;
+  --ThemeOneBoxBackground: #c88fd5;
+  --ThemeOneNavTextColor: #f1f0f0;
+  --ThemeOneBorderColor: #150e20;
+  --ThemeOnePostBackground: #c88fd5;
+  --ThemeOneButtonText: #edd6cb;
+  --ThemeOneButtonBackground: #e6c9df;
+
+  /* Theme Two */
+  --ThemeTwoTitleColor: #2f2e52;
+  --ThemeTwoTextColor: #11253d;
+  --ThemeTwoBackgroundColor: #7dc4c5;
+  --ThemeTwoElementColorHighlight: #d7f0ea;
+  --ThemeTwoBoxBackground: #bbebbb;
+  --ThemeTwoNavTextColor: #353b3a;
+  --ThemeTwoBorderColor: #1b3350;
+  --ThemeTwoPostBackground: white;
+  --ThemeTwoButtonText: #edd6cb;
+  --ThemeTwoButtonBackground: #e6c9df;
+
+  /* Theme Three */
+  --ThemeThreeTitleColor: #383332;
+  --ThemeThreeTextColor: #383332;
+  --ThemeThreeBackgroundColor: #872B35;
+  --ThemeThreeElementColorHighlight: #e6be6e;
+  --ThemeThreeBoxBackground: #e4c4ba;
+  --ThemeThreeNavTextColor: #fff3ec;
+  --ThemeThreeBorderColor: #1e3202;
+  --ThemeThreePostBackground: #e4c4ba;
+  --ThemeThreeButtonText: #f7f9de;
+  --ThemeThreeButtonBackground: #dfe5a4;
+
+  /* Theme Four */
+  --ThemeFourTitleColor: #1d1d1d;
+  --ThemeFourTextColor: #00061c;
+  --ThemeFourBackgroundColor: rgb(255, 255, 255);
+  --ThemeFourElementColorHighlight: #7d8499;
+  --ThemeFourBoxBackground: #a6b0ce;
+  --ThemeFourNavTextColor: #E9E9EA;
+  --ThemeFourBorderColor: #292C36;
+  --ThemeFourPostBackground: #7d8499;
+  --ThemeFourButtonText: #f7f9de;
+  --ThemeFourButtonBackground: #dfe5a4;
+
+    /* Theme Five 
+     --ThemeFiveBackgroundColor: #F2ECD9;*/
+
+    --ThemeFiveTitleColor: #00101c;
+    --ThemeFiveTextColor: #001827;
+    --ThemeFiveBackgroundColor: #F2ECD9;
+    --ThemeFiveElementColorHighlight: #90B0A9;
+    --ThemeFiveBoxBackground: #FAD265;
+    --ThemeFiveNavTextColor: #E9E9EA;
+    --ThemeFiveBorderColor: #00223e;
+    --ThemeFivePostBackground: #D76735;
+    --ThemeFiveButtonText: #f7f9de;
+    --ThemeFiveButtonBackground: #dfe5a4;
+
+    /* Theme Six */
+    --ThemeSixTitleColor: #000f1c;
+    --ThemeSixTextColor: #001f33;
+    --ThemeSixBackgroundColor: #326563;
+    --ThemeSixElementColorHighlight: #aedecd;
+    --ThemeSixBoxBackground: #fff2e9;
+    --ThemeSixNavTextColor: #ededed;
+    --ThemeSixBorderColor: #00223e;
+    --ThemeSixPostBackground: #aedecd;
+    --ThemeSixButtonText: #f7f9de;
+    --ThemeSixButtonBackground: #dfe5a4;
+
+    /* Theme Selection Bar */
+    --themeSelectionButtonText:
+  --selectedThemeButtonText: var(--neutralText);
+  --selectedThemeButtonBackground: var(--neutralBackground);
+
+  --hoveredButtonText: var(--blueText);
+  --hoveredButtonBackground: var(--blueBackground);
+
+  --neutralText: black;
+  --neutralBackground: white;
+
+  --blueText: blue;
+  --blueBackground: teal;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+* {
+  margin: 0;
+}
+
+
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  display: flex;
+  justify-content: stretch;
+  align-items:stretch;
+  flex-direction: column;
+  background-color: var(--selectedThemeBackgroundColor);
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: var(--selectedThemeElementColorHighlight);
+  border: var(--borderWidth) solid rgb(0, 0, 0);
+  position: sticky;
+  padding: 0.5rem;
+  padding-left: 0;
+  padding-right: 0;
+  margin:0;
+}
+
+.navText {
+  color: var(--selectedNavTextColor);
+  background-color: var(--selectedThemeBoxBackground);
+  border-radius: var(--borderRadius);
+  border: var(--borderWidth) solid rgb(0, 0, 0);
+  padding: 0.5rem;
+  margin-right: 1em;
+  cursor: pointer;
+}
+
+.navText:hover {
+  opacity: 50%;
+}
+
+header {
+  margin: 10 rem;
+  padding: 10 rem;
+  border: 10px;
+}
+
+#violet {
+  color: var(--selectedNavTextColor);
+  background-color: var(--selectedThemeBoxBackground);
+  border-radius: var(--borderRadius);
+  border: var(--borderWidth) solid rgb(0, 0, 0);
+  padding: 0.5rem;
+  margin-right: auto;
+  margin-left: 1em;
+}
+
+.homePage {
+  display:flex;
+  flex-direction: row;
+
+}
+
+/*
+#violetImage {
+  max-width: 45ch;
+  max-height: 45ch;
+  margin: 1rem;
+  margin-left: 5rem;
+}
+*/
+
+.homePagePosts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.posts {
+  background-color: var(--selectedThemePostBackground);
+  max-width: 45ch;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  border: var(--borderWidth) solid var(--selectedThemeBorderColor);
+  z-index: auto;
+}
+
+.title {
+  align-self: flex-start;
+  font-size:2.5rem;
+  margin: 1rem;
+  color: var(--selectedThemeTitleColor);
+}
+
+p {
+  font-size: 1.5rem;
+  margin: 1rem;
+  color: var(--selectedThemeTextColor);
+}
+
+/*
+=============== THEME BAR =======================
+*/
+
+#themeBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--selectedThemeElementColorHighlight);
+  border: var(--borderWidth) solid rgb(0, 0, 0);
+  /* margin-top: auto; */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#themeOneBtn {
+  color: var(--neutralText);
+  background-color: var(--neutralBackground);
+}
+
+#themeTwoBtn {
+  color: var(--neutralText);
+  background-color: var(--neutralBackground);
+}
+
+#themeThreeBtn {
+  color: var(--neutralText);
+  background-color: var(--neutralBackground);
+}
+
+#themeFourBtn {
+  color: var(--neutralText);
+  background-color: var(--neutralBackground);
+}
+
+#themeFiveBtn {
+  color: var(--neutralText);
+  background-color: var(--neutralBackground);
+}
+
+#themeSixBtn {
+  color: var(--neutralText);
+  background-color: var(--neutralBackground);
+}
+
+.themeButtons {
+  bottom: 0;
+  margin: .5em;
+  font-size: 1rem;
+  min-width: 5rem;
+  border-radius: var(--borderRadius);
+  position: relative;
+  outline: unset;
+  transition: background-color 0.3s ease, box-shadow 0.7s ease;
+}
+
+.themeButtons:hover {
+  opacity: 80%;
+  background-color: var(--selectedThemeBackgroundColor)
+}
+
+
+:focus {
+  outline: 5px solid var(--selectedThemeBorderColor);
+  outline-offset: 1px;
+}
+
+::-moz-focus-inner {
+  border: 0;
+}
